@@ -1,0 +1,12 @@
+import React from 'react'
+
+const Contact = () => {
+  return (
+    <div style={{marginTop:"100px",height:"auto"}} >
+
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur molestiae enim dolorem quo vitae optio eum incidunt, temporibus placeat alias corrupti illo. Blanditiis ea aspernatur voluptates provident hic ab, enim reprehenderit suscipit pariatur asperiores, ad praesentium? Et corrupti numquam corporis fugit eligendi porro ut mollitia adipisci officia ex. Omnis impedit vel aut dolorum illo, ea provident commodi temporibus fuga. Odit corporis accusamus enim, soluta maxime qui sequi perferendis est ea odio animi placeat alias dolore eum ratione voluptatum! Minus, obcaecati itaque dolorem assumenda, magni laboriosam consectetur repellat, impedit at voluptas veniam qui quo iure. Enim repudiandae consectetur temporibus explicabo esse facere dolor veniam, quas, sit ut magnam nihil sapiente veritatis. Eligendi expedita quas temporibus ratione sunt nostrum, voluptas culpa numquam provident accusamus iure praesentium architecto doloribus quis at vel. Quidem exercitationem mollitia beatae asperiores sunt minus ad harum in. Aut, laboriosam provident magnam sunt architecto eveniet iusto? Velit consectetur tempora quia mollitia asperiores laboriosam amet totam officiis nobis, sint facere ullam autem labore aliquam magnam excepturi! Eum magni impedit omnis repellat. Eveniet quasi dolorem eum placeat laboriosam libero, error tempora illo delectus officiis ipsam? Assumenda suscipit ea doloribus sint earum deleniti laborum quam veritatis laboriosam ducimus harum, optio ut nihil! Recusandae eligendi natus beatae amet officia, dolorum maxime fugiat reprehenderit voluptates possimus accusamus facere veniam excepturi, dolorem minima praesentium incidunt porro facilis est exercitationem sit aliquid tempore dicta deleniti? Cum reprehenderit, sequi suscipit quo repudiandae est quidem quam temporibus molestiae voluptatibus tempore at vitae itaque eligendi amet? Consectetur hic labore maiores numquam sed atque ad est nisi officiis? Obcaecati, doloremque! Hic temporibus dicta reprehenderit, esse enim dolor, qui officiis, quo quos dolores ipsa. A hic autem, natus unde vel repellat eligendi iusto explicabo sed dolorum, distinctio illum totam et ex? Adipisci quibusdam omnis ab sed minima suscipit ea praesentium distinctio!</h1>
+    </div>
+  )
+}
+
+export default Contact

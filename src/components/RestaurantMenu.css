@@ -1,0 +1,61 @@
+.restaurant{
+    margin-top: 100px;
+}
+.card{
+    display: flex;
+    height: auto;
+    width: 500px;
+    padding: 10px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.rescard{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.menuimg{
+    height: 100px;
+    width: 100px;
+}
+.rightmenu{
+    display: flex;
+    flex-direction: column;
+}
+.leftmenu{
+    width: 100%;
+    color: black;
+}
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: underline;
+}
+.res-menu{
+    height: 100px;
+    width: 100px;
+}
+.res-card{
+    width: auto;
+    padding: 20px;
+    height: auto;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.5);
+}
+.close{
+    color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.go-back{
+    text-decoration: none;
+    color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

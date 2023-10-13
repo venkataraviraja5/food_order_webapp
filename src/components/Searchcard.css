@@ -1,0 +1,57 @@
+.search-card{
+    display: flex;
+    height: 150px;
+    width: 420px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.5);
+}
+.search-img{
+    height: 100px;
+    width: 100px;
+   
+}
+.cards-flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 50px;
+  }
+  .search{
+    margin-top: 100px;
+    min-height: 100vh;
+  }
+  .right-search{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 200px;
+  }
+  .left-search{
+    width: 100%;
+    align-items: end;
+  }
+  .search-addbtn{
+    height: 30px;
+    width: 50px;
+
+  }
+  .search-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.input-box{
+    height: 30px;
+    width: 400px;
+  }
+  .sortprice{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 10px;
+  }

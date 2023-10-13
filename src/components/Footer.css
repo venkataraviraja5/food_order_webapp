@@ -1,0 +1,10 @@
+.footer{
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 200px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
