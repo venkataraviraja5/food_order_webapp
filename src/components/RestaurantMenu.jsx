@@ -13,7 +13,7 @@ const RestaurantMenu = () => {
     const {id} = useParams()
  
     const {restaurant,restaurantMenu} = useRestaurantMenu({id})
-   // console.log(restaurantMenu);
+    console.log(restaurantMenu);
     
     const price = 50;
 

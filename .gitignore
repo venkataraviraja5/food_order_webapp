@@ -23,3 +23,5 @@ yarn-debug.log*
 yarn-error.log*
 
 
+ const [latitude,setlatitude] = useState(17.385043)
+    const [longitude,setlongitude] = useState(78.486671)

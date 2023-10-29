@@ -8,6 +8,7 @@ import SearchCartCard from './SearchCartCard'
 import Checkoutform from './Checkoutform'
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
+import { myordersfunction } from '../Utils/cartSlice'
 
 
 const CartItems = () => {
@@ -21,9 +22,11 @@ const CartItems = () => {
     const clear = () =>{
         dispatch(clearCart())
     }
+    
      if(price === 0){
       dispatch(formshow(false))
      }
+
     const checkoutbtn = () =>{
       if(show === false){
         dispatch(formshow(true))
