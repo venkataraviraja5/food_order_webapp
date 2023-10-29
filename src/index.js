@@ -12,6 +12,7 @@ import { createBrowserRouter,RouterProvider,Outlet} from 'react-router-dom';
 import { Provider } from 'react-redux';
 import store from './Utils/store';
 import Search from './components/Search';
+import MyOrders from './components/MyOrders';
 
 
 function App() {
@@ -56,6 +57,10 @@ const appRouter = createBrowserRouter([
       {
         path:"/search",
         element:<Search />
+      },
+      {
+        path:"/my-orders",
+        element:<MyOrders />
       }
     ]
   },

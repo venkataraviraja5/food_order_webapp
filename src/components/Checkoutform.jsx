@@ -4,15 +4,18 @@ import {  useSelector } from 'react-redux/es/hooks/useSelector'
 import { clearCart,formshow} from '../Utils/cartSlice'
 import { useDispatch } from 'react-redux'
 import { Link } from 'react-router-dom'
+import { myordersfunction } from '../Utils/cartSlice'
 
 const Checkoutform = () => {
     const price = useSelector(store => store.cart.price)
+    const itemslist = useSelector(store => store.cart.items)
+    console.log(itemslist);
     const dispatch = useDispatch()
     const [name,setname] = useState('')
     const [address,setaddress] = useState('')
     const [number,setnumber] = useState('')
 
-    const oderbtn = () =>{
+    const orderbtn = () =>{
     if(name.length === 0 || address.length ===0 || number.length === 0){
         alert("Enter Your Details")
     }
@@ -20,6 +23,7 @@ const Checkoutform = () => {
         dispatch(clearCart())
         alert("Oder Succesfull")
         dispatch(formshow(false))
+        dispatch(myordersfunction(itemslist))
     }
     }
 
@@ -53,10 +57,10 @@ const Checkoutform = () => {
           <div class="form-field">
             {name && address && number ?
             <div>
-                <Link to="/"><button class="submit-button" onClick={oderbtn}>Oder</button></Link>
+                <Link to="/"><button class="submit-button" onClick={orderbtn}>Order</button></Link>
             </div>:
             <div>
-                <button class="submit-button" onClick={oderbtn}>Oder</button>
+                <button class="submit-button" onClick={orderbtn}>Order</button>
            </div>
         }
             
