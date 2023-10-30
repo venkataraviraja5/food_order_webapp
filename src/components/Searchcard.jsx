@@ -5,7 +5,7 @@ import { searchAddItem } from '../Utils/cartSlice'
 import { useDispatch } from 'react-redux'
 import Button from '@mui/material/Button';
 
-const Searchcard = ({name,imgid,price,item}) => {
+const Searchcard = ({name,imgid,price,item,description}) => {
    
     const dispatch = useDispatch()
 
@@ -18,6 +18,7 @@ const Searchcard = ({name,imgid,price,item}) => {
        <div className='left-search'>
           <h4>{name}</h4>  
           <h5>Price:{price/100}/-</h5>
+         
        </div>
        <div className='right-search'>
           <img src={img_url+imgid} className='search-img'/>
