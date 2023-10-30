@@ -5,11 +5,13 @@ import { clearCart,formshow} from '../Utils/cartSlice'
 import { useDispatch } from 'react-redux'
 import { Link } from 'react-router-dom'
 import { myordersfunction } from '../Utils/cartSlice'
+import { mysearchorderfunction } from '../Utils/cartSlice'
 
 const Checkoutform = () => {
     const price = useSelector(store => store.cart.price)
     const itemslist = useSelector(store => store.cart.items)
-    console.log(itemslist);
+    const searchorderlist = useSelector(store => store.cart.  searchItems)
+    //console.log(itemslist);
     const dispatch = useDispatch()
     const [name,setname] = useState('')
     const [address,setaddress] = useState('')
@@ -24,6 +26,7 @@ const Checkoutform = () => {
         alert("Oder Succesfull")
         dispatch(formshow(false))
         dispatch(myordersfunction(itemslist))
+        dispatch( mysearchorderfunction(searchorderlist))
     }
     }
 
