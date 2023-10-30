@@ -8,12 +8,16 @@ const cartSlice = createSlice({
         price:0,
         searchItems:[],
         formState:false,
-        myorders:[]
+        myorders:[],
+        searchOrders:[]
     },
     reducers:{
 
         myordersfunction:(state,action) => {
               state.myorders.push(action.payload)
+        },
+        mysearchorderfunction:(state,action) => {
+              state.searchOrders.push(action.payload)
         },
         addItem:(state,action) => {
             const newItem = action.payload;
@@ -175,7 +179,7 @@ const cartSlice = createSlice({
 })
 
 export const {addItem ,removeItem,clearCart,incrementCounter,decrementCounter,searchAddItem,searchremoveItem,
-searchincrementCounter,searchdecrementCounter,formshow,myordersfunction} = cartSlice.actions
+searchincrementCounter,searchdecrementCounter,formshow,myordersfunction,mysearchorderfunction} = cartSlice.actions
 
 export default cartSlice.reducer
 

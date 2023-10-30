@@ -27,12 +27,13 @@
   .right-search{
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 50%;
     margin-left: 200px;
+
   }
   .left-search{
-    width: 100%;
-    align-items: end;
+    width: 50%;
+   
   }
   .search-addbtn{
     height: 30px;
@@ -55,3 +56,12 @@
     margin-top: 20px;
     gap: 10px;
   }
+  .filter{
+    background-color: black;
+    color: white;
+    height: 18px;
+    width: 60px;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 25px;
+   }

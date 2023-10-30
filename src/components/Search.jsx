@@ -16,7 +16,7 @@ const Search = () => {
      else{
         const searchdata = await fetch(`https://www.swiggy.com/dapi/restaurants/search/v3?lat=17.385044&lng=78.486671&str=${searchdish}&trackingId=null&submitAction=SUGGESTION&queryUniqueId=73632e99-f832-6f71-d054-a1ff4b822e27&metaData=%7B%22type%22%3A%22DISH%22%2C%22data%22%3A%7B%22vegIdentifier%22%3A%22NA%22%2C%22cloudinaryId%22%3A%22ocrnq6kwvvrl2ouea492%22%2C%22dishFamilyId%22%3A%22846613%22%2C%22dishFamilyIds%22%3A%5B%22846613%22%5D%7D%2C%22businessCategory%22%3A%22SWIGGY_FOOD%22%2C%22displayLabel%22%3A%22Dish%22%7D`);
         const jsondata = await searchdata.json();
-      // console.log(jsondata?.data?.cards[1]?.groupedCard?.cardGroupMap?.DISH?.cards)
+        // console.log(jsondata)
         setsearchList(jsondata?.data?.cards[1]?.groupedCard?.cardGroupMap?.DISH?.cards)
      }
      }
@@ -36,6 +36,8 @@ const Search = () => {
         sortedList.sort((a,b) => a.card?.card?.info?.price - b.card?.card?.info?.price);
         setsearchList(sortedList)
     }
+
+
     
   return (
     <div className='search'> 
@@ -46,7 +48,7 @@ const Search = () => {
       </div>
       {searchList.length >0 ?
       <div className='sortprice'>
-      <h3>Filters:</h3><Button variant="contained" onClick={sortPriceHightoLow}>High to Low</Button><Button variant="contained" onClick={sortPriceLowtoHigh}>Low to High</Button>
+      <p className='filter'>FILTERS</p><Button variant="contained" onClick={sortPriceHightoLow}>High to Low</Button><Button variant="contained" onClick={sortPriceLowtoHigh}>Low to High</Button>
       </div> : null }
       <div className='cards-flex-container'>
       {
@@ -55,6 +57,7 @@ const Search = () => {
            <Searchcard name={value?.card?.card?.info?.name} imgid={value?.card?.card?.info?.imageId} 
            price={value?.card?.card?.info?.price}
            item={value}
+           description={value?.card?.card?.info?.description}
            />
         </div>
         ))

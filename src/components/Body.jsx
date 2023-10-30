@@ -37,7 +37,7 @@ const Body = () => {
     <h1 className='tag'>Restaurants with online food delivery</h1>
     {restaurants.length > 0 && restaurantsList.length > 0 ? 
    <div className='sort'>
-   <p className='filter'>Filters </p>
+   <p className='filter'>FILTERS </p>
    <div className='sort-btn'>
    <Button variant="contained" size="small" onClick={() => handleSortChange('rating')} style={{height:"35px"}}>
           Rating

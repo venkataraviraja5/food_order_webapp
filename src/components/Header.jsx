@@ -12,7 +12,7 @@ const Header = () => {
   return (
     <div className='header'>
       <div className='left'>
-         <a href='/'> <img src='https://static.vecteezy.com/system/resources/previews/008/131/223/original/simple-and-clean-restaurant-logo-template-design-in-brown-color-suitable-for-restaurants-cafe-shops-food-stalls-food-menus-etc-free-vector.jpg'/></a>
+         <a href='/'> <img src='https://play-lh.googleusercontent.com/h_l3BK710iqr1mH8WY0yEtIJmyPGAKV4upFt4n--NxZO-fJ8wwZxV3ZoSQRn5z1a_Q'/></a>
       </div>
      
       <div className='right'>
