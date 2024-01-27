@@ -11,6 +11,7 @@ const Body = () => {
    const restaurantsList = useSwiggy()
    const [sortBy, setSortBy] = useState(''); 
    let restaurants = 0;
+   
    const sortRestaurants = () => {
     if(restaurantsList){
       const resList = [...restaurantsList];
