@@ -7,7 +7,7 @@ const port = process.env.PORT || 8080;
 
 app.use(cors());
 
-app.get('/restaurants', (req, res,next) => {
+app.get('/restaurants', (req, res) => {
 
     const url = `https://www.swiggy.com/dapi/restaurants/list/v5?lat=17.385043&lng=78.486671&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING`;
   
