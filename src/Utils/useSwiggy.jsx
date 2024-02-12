@@ -12,9 +12,9 @@ const useSwiggy = () =>{
         const jsondata = await response.json();
     
         const restaurants = jsondata;
-       //console.log(restaurants);
+       //console.log(restaurants?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
   
-          setRestaurantList(restaurants?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants) 
+          setRestaurantList(restaurants?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants) 
        }
        catch(err){
 
