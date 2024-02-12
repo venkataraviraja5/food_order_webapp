@@ -5,7 +5,12 @@ const fetch = require('cross-fetch');
 const app = express();
 const port = process.env.PORT || 8080;
 
-app.use(cors());
+app.use(cors())
+
+app.get('/',(req,res,next) => {
+  res.send("api is running")
+  next()
+})
 
 app.get('/restaurants', (req, res) => {
 
