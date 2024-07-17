@@ -8,7 +8,7 @@ const useSwiggy = () =>{
     const swiggyApi = async() =>  {
         
        try{
-        const response = await fetch(swiggy_Api);
+        const response = await fetch("http://localhost:8080/restaurants");
         const jsondata = await response.json();
     
         const restaurants = jsondata;
