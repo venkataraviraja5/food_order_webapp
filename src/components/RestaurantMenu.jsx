@@ -13,7 +13,7 @@ const RestaurantMenu = () => {
     const {id} = useParams()
  
     const {restaurant,restaurantMenu} = useRestaurantMenu({id})
-    console.log(restaurantMenu);
+   // console.log(restaurantMenu);
     
     const price = 50;
 
@@ -26,8 +26,8 @@ const RestaurantMenu = () => {
   return (
     <div className='restaurant'>
      <div className='res-card'>
-      <h1>Restaurant Name : {restaurant?.card?.card?.info?.name}</h1>
-      <img src={img_url + restaurant?.card?.card?.info?.cloudinaryImageId} className='res-menu'/>
+      <h1 className='res-name'>Restaurant Name : {restaurant?.name}</h1>
+     
       <h4>{restaurant?.card?.card?.info?.city}</h4>
     
      </div>

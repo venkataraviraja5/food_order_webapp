@@ -1,7 +1,8 @@
 .shimmercard{
     width: 250px;
     height: 300px;
-    background-color: gray;
+    background-color: violet;
+    border-radius: 10px;
 }
 .container{
     display: flex;

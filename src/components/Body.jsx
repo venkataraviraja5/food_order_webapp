@@ -11,6 +11,9 @@ const Body = () => {
    const restaurantsList = useSwiggy()
    const [sortBy, setSortBy] = useState(''); 
    let restaurants = 0;
+
+
+  //console.log("res",restaurantsList)
    
    const sortRestaurants = () => {
     if(restaurantsList){
@@ -48,7 +51,6 @@ const Body = () => {
         </Button>
    </div>
    </div> : null}
-   <div className='line'></div>
     <div className='body-data'>
 
   
@@ -61,7 +63,6 @@ const Body = () => {
             <Link to={"/restaurants/" + val?.info?.id} className='link-no-underline'>
               <Cards name={val?.info?.name} imgid={val?.info?.cloudinaryImageId} cuisineitems={val?.info?.cuisines.join(",")} 
               rating={val?.info?.avgRating} distance={val?.info?.sla?.lastMileTravel}/>
-              
             </Link>
           </div>
         ))}

@@ -22,6 +22,5 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-
- const [latitude,setlatitude] = useState(17.385043)
-    const [longitude,setlongitude] = useState(78.486671)
+mongodb+srv://raviraja2000:<password>@cluster0.eabcdxj.mongodb.net/
+Replace <password> with the password for the raviraja2000 user. Ensure any option
