@@ -12,7 +12,8 @@ const useSwiggy = () =>{
         const jsondata = await response.json();
     
         const restaurants = jsondata;
-       //console.log(restaurants?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
+      // console.log(restaurants?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
+      // console.log("res",restaurants)
   
           setRestaurantList(restaurants?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants) 
        }
@@ -22,9 +23,9 @@ const useSwiggy = () =>{
           
     };
     
-       useEffect(() => {
+    useEffect(() => {
       swiggyApi();
-    },[]); 
+    },[restaurantsList.length === 0]); 
 
  
 

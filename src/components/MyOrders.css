@@ -1,6 +1,7 @@
 .my-orders{
     min-height: 100vh;
-    margin-top: 100px;
+    margin-top: 75px;
+    background-color: purple;
 }
 .order-card{
     height: 100%;

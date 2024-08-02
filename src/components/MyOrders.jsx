@@ -12,7 +12,7 @@ const MyOrders = () => {
   return (
     <div className='my-orders'>
         {
-            myorderslist.length === 0 ? <div> <h1>YOUR ORDER LIST IS EMPTY</h1></div> : <div><h1>ORDERS WILL DELIVER IN FEW MINUTES</h1> </div>
+            myorderslist.length === 0 ? <div className='tag'> <h1>YOUR ORDER LIST IS EMPTY</h1></div> : <div><h1>ORDERS WILL DELIVER IN FEW MINUTES</h1> </div>
         }
        <div className='myorderlist'>
        {
