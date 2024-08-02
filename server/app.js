@@ -3,10 +3,15 @@ const cors = require('cors');
 const fetch = require('cross-fetch');
 
 const app = express();
-const port = process.env.PORT || 8080;
+const port =  8080;
 
 app.use(cors())
 
+app.get('/',(req,res) =>{
+    res.send("swiggy API")
+}
+)
+    
 
 app.get('/restaurants', (req, res) => {
 
@@ -65,6 +70,6 @@ app.get('/restaurants', (req, res) => {
   });
 
 
-app.listen(port, () => {
-  console.log(`Server is listening on port ${port}`);
+app.listen(8080, () => {
+  console.log(`Server is listening on port 8080`);
 });
